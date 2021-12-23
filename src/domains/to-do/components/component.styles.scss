@@ -1,0 +1,44 @@
+$electric-blue: #2D42A3;
+
+.toolbar {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  padding: 2px 2px 5px 2px;
+  .loading, .error {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    font-size: 24px;
+  }
+  .loading {
+    color: $electric-blue;
+  }
+  .error {
+    color: red;
+  }
+}
+
+.add-edit-todo {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  max-width: 300px;
+  .todo-display {
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+}
+
+.todo-view {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  box-sizing:border-box;
+
+  .todo-content {
+    display: flex;
+    flex-direction: row;
+  }
+}

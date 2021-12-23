@@ -1,0 +1,65 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "esnext",
+    "target": "es5",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "sourceMap": true,
+    "allowJs": false,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "./*"
+      ],
+      "@decorators/*": [
+        ".storybook/decorators/*"
+      ],
+      "@appState/*": [
+        "src/app-base/state/*"
+      ],
+      "@common/*": [
+        "src/common/*"
+      ],
+      "@domains/*": [
+        "src/domains/*"
+      ],
+      "@utils/*": [
+        "src/common/utilities/*"
+      ],
+    },
+    "types": [
+      "jest",
+      "node"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "include": [
+    "src/**/*.tsx",
+    "src/**/*.ts",
+    "public/index.tsx"
+  ],
+  "exclude": [
+    ".vscode",
+    "coverage",
+    "dist",
+    "node_modules",
+  ]
+}

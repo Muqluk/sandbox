@@ -1,0 +1,57 @@
+$electric-blue: #2D42A3;
+
+$list-item-border: rgba(0, 0, 0, .20);
+$list-item-gradient-dark: rgba(0, 0, 0, .05);
+
+.basic-list-box {
+  display: inline-block;
+  background-color: white;
+  margin: 2px 20px 2px 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+    border: 3px inset $list-item-border;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .empty-list-items {
+    opacity: .25;
+  }
+
+}
+.basic-list-item {
+  display: inline-flex;
+  justify-content: left;
+  min-width: 150px;
+  align-items: center;
+  padding: 3px 8px;
+  white-space: nowrap;
+  user-select: none;
+  border-bottom: 1px solid $list-item-border;
+}
+
+.item {
+  background: linear-gradient($list-item-gradient-dark, white 30% 70%, $list-item-gradient-dark);
+  color: $electric-blue;
+  &:hover {
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.error {
+  background: white;
+  color: red;
+}
+
+.selected {
+  background: linear-gradient(white, $electric-blue 20% 80%, white);
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,24 @@
+$electric-blue: #2D42A3;
+
+.label-left {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.label-top {
+  display: flex;
+  flex-direction: column;
+}
+.text-input {
+  white-space: nowrap;
+  .label {
+    color: $electric-blue;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  input {
+    display: flex;
+    flex: 1 1 auto;
+  }
+}
